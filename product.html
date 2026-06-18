@@ -46,22 +46,23 @@
 </header><main id="main">
 <section class="section">
   <div class="wrap">
-    <nav class="crumb" aria-label="麵包屑"><a href="./index.html">首頁</a> / <a href="./shop.html">全部商品</a> / <span>電光莓果</span></nav>
+    <nav class="crumb" aria-label="麵包屑"><a href="./index.html">首頁</a> / <a href="./shop.html">全部商品</a> / <span id="pd-crumb">電光莓果</span></nav>
     <div class="pd-grid">
       <div class="pd-media">
-        <img src="./images/p-berry.webp" alt="電光莓果 70% 覆盆莓黑巧克力磚商品照" width="800" height="800">
-        <span class="pd-badge" style="background:var(--pink)">熱銷 No.1</span>
+        <img id="pd-img" src="./images/p-berry.webp" alt="電光莓果 70% 覆盆莓黑巧克力磚商品照" width="800" height="800">
+        <span class="pd-badge" id="pd-badge" style="background:var(--pink)">熱銷 No.1</span>
       </div>
       <div class="pd-info">
-        <span class="kicker">ELECTRIC BERRY · 色票 覆盆莓紅</span>
-        <h1>電光莓果</h1>
-        <div class="stars" aria-label="評分 4.9 分，共 5 分">
+        <span class="kicker" id="pd-kicker">ELECTRIC BERRY · 色票 覆盆莓紅</span>
+        <h1 id="pd-name">電光莓果</h1>
+        <div class="stars" aria-label="評分">
+          <span class="stars-svg"></span>
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.5"/></svg><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.5"/></svg><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.5"/></svg><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.5"/></svg><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.5"/></svg>
-          <span class="rating-text">4.9（128 則評價）</span>
+          <span class="rating-text" id="pd-rating">4.9（128 則評價）</span>
         </div>
-        <p class="price-big">NT$280</p>
-        <p class="lead">70% 單一產地黑巧克力片，鑲嵌大顆冷凍乾燥覆盆莓脆粒。可可的深沉先到，接著是莓果酸甜在舌尖「啪」地炸開——這就是我們把它取名「電光」的原因。</p>
-        <ul class="spec">
+        <p class="price-big" id="pd-price">NT$280</p>
+        <p class="lead" id="pd-lead">70% 單一產地黑巧克力片，鑲嵌大顆冷凍乾燥覆盆莓脆粒。可可的深沉先到，接著是莓果酸甜在舌尖「啪」地炸開——這就是我們把它取名「電光」的原因。</p>
+        <ul class="spec" id="pd-spec">
           <li><b>可可含量</b><span>70%（厄瓜多 Nacional 豆）</span></li>
           <li><b>淨重</b><span>80g</span></li>
           <li><b>風味</b><span>覆盆莓 · 烏梅 · 可可豆香</span></li>
@@ -74,10 +75,15 @@
       </div>
     </div>
 
-    <div class="pd-story">
+    <div class="pd-story" id="pd-story">
       <article><h2>風味從哪裡來</h2><p>我們向厄瓜多單一莊園採購 Nacional 品種可可豆，這支豆子本身就帶有明亮的花果調。低溫慢烘 18 分鐘，保留果酸，再以 70% 比例調溫，讓黑巧克力的厚度恰好托住莓果的尖銳。</p></article>
       <article><h2>為什麼是這個顏色</h2><p>電光洋紅（#FF3D81）是覆盆莓在我們味覺裡的顏色——飽和、跳動、停不下來。彩可的每一支巧克力都從一張色票開始，顏色決定了我們要追的風味方向。</p></article>
       <article><h2>怎麼吃最好</h2><p>讓巧克力在室溫回溫五分鐘，掰一小塊放在舌上等它融化，先感受可可，再等莓果脆粒迸開。搭配氣泡水或淺焙手沖，酸度會更立體。</p></article>
+    </div>
+
+    <div class="pd-related" id="pd-related" hidden>
+      <h2>其他色票</h2>
+      <div class="prod-grid" id="pd-related-grid"></div>
     </div>
   </div>
 </section>
@@ -104,6 +110,8 @@
     <p class="credit">網站製作 · 橋序創研 BridgeSeqLab</p>
   </div>
 </footer>
+<script src="./js/products-data.js"></script>
+<script src="./js/product-detail.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
