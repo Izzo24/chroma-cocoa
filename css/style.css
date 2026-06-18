@@ -65,7 +65,7 @@ h1,h2,h3{font-family:var(--display);line-height:1.12;font-weight:900;letter-spac
   radial-gradient(50% 70% at 10% 85%,rgba(138,154,91,.22),transparent 60%)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
 .hero h1{font-size:clamp(2.7rem,6vw,4.6rem);font-weight:900;font-style:italic}
-.hl{padding:0 .1em;border-radius:30px;font-style:normal}
+.hl{padding:0 .2em;margin:0 .14em;border-radius:30px;font-style:normal}
 .hl-pink{background:var(--pink);color:var(--paper2)}
 .hl-blue{background:var(--blue);color:var(--paper2)}
 .lead{font-size:1.13rem;margin-top:20px;max-width:46ch;color:var(--ink-soft)}
