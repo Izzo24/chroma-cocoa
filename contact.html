@@ -28,6 +28,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"彩可 CHROMA COCOA","image":"https://izzo24.github.io/chroma-cocoa/images/hero.webp","url":"https://izzo24.github.io/chroma-cocoa/contact.html","telephone":"+886-2-2700-2486","email":"hello@chromacocoa.tw","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"色彩街24號","addressLocality":"台北市大安區","postalCode":"106","addressCountry":"TW"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"20:00"}]}
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://izzo24.github.io/chroma-cocoa/index.html"},{"@type":"ListItem","position":2,"name":"聯絡我們","item":"https://izzo24.github.io/chroma-cocoa/contact.html"}]}</script>
+<link rel="stylesheet" href="./addon.css">
 </head>
 <body>
 <a class="skip-link" href="#main">跳至主要內容</a>
@@ -41,7 +42,7 @@
 <circle cx="24" cy="24" r="7.5" fill="var(--paper)"/>
 </svg><span class="brand-text"><b>彩可</b><i>CHROMA COCOA</i></span></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="開啟選單"><span></span><span></span><span></span></button>
-    <nav aria-label="主選單"><ul id="primary-nav" class="nav-list"><li><a href="./index.html">首頁</a></li><li><a href="./shop.html">全部商品</a></li><li><a href="./product.html">熱銷推薦</a></li><li><a href="./about.html">品牌故事</a></li><li><a href="./contact.html" aria-current="page">聯絡我們</a></li></ul></nav>
+    <nav aria-label="主選單"><ul id="primary-nav" class="nav-list"><li><a href="./index.html">首頁</a></li><li><a href="./shop.html">全部商品</a></li><li><a href="./product.html">熱銷推薦</a></li><li><a href="./about.html">品牌故事</a></li><li><a href="./contact.html" aria-current="page">聯絡我們</a></li><li><a class="acct-link" href="./member.html" aria-label="會員中心"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg><span>會員</span></a></li><li><button class="cart-toggle" type="button" aria-label="購物車" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.4l1.6 12.4a1.5 1.5 0 0 0 1.5 1.3h8.4a1.5 1.5 0 0 0 1.5-1.2L21 8H6.4"/><circle cx="9.5" cy="20.5" r="1.2" fill="currentColor"/><circle cx="17.5" cy="20.5" r="1.2" fill="currentColor"/></svg><span class="cart-badge" aria-hidden="true">0</span></button></li></ul></nav>
   </div>
 </header><main id="main">
 <section class="page-hero ph-mint">
@@ -112,5 +113,12 @@
   </div>
 </footer>
 <script src="./js/main.js"></script>
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="購物車" aria-hidden="true">
+  <div class="cd-head"><h2>購物車</h2><button class="cd-close" id="cartClose" aria-label="關閉購物車"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="cd-body"><p class="cd-empty">您的購物車目前是空的。<br>歡迎先逛逛全部商品。</p></div>
+  <div class="cd-foot"><div class="cd-total"><span>小計</span><span>NT$ 0</span></div><a class="mc-btn" href="./shop.html">前往選購</a></div>
+</aside>
+<script src="./addon.js" defer></script>
 </body>
 </html>

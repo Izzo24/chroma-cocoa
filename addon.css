@@ -1,0 +1,42 @@
+/* 彩可 CHROMA COCOA — header 會員/購物車 + 側欄 + 會員中心(addon, 70s retro) */
+.nav-list .acct-link,.nav-list .cart-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:0;cursor:pointer;color:var(--ink,#3b2417);font:inherit;font-size:.95rem;padding:.2rem;line-height:1}
+.nav-list .cart-toggle{position:relative}
+.nav-list .acct-link svg,.nav-list .cart-toggle svg{width:22px;height:22px}
+.nav-list .acct-link:hover,.nav-list .cart-toggle:hover{color:#c75450}
+.nav-list li:has(.acct-link),.nav-list li:has(.cart-toggle){display:inline-flex;align-items:center}
+.cart-badge{display:inline-flex;align-items:center;justify-content:center;min-width:17px;height:17px;padding:0 4px;background:#c75450;color:#fffaf0;font-size:11px;font-weight:700;border-radius:50px}
+.cart-overlay{position:fixed;inset:0;background:rgba(59,36,23,.5);opacity:0;visibility:hidden;transition:.3s;z-index:200}
+.cart-overlay.show{opacity:1;visibility:visible}
+.cart-drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,92vw);background:#f6ead6;border-left:2px solid #3b2417;transform:translateX(100%);transition:transform .35s ease;z-index:210;display:flex;flex-direction:column;color:#3b2417}
+.cart-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.4rem;border-bottom:2px solid #3b2417}
+.cd-head h2{font-size:1.3rem;margin:0}
+.cd-close{background:none;border:0;cursor:pointer;color:#3b2417;display:inline-flex;padding:.3rem}.cd-close svg{width:24px;height:24px}
+.cd-body{flex:1;overflow:auto;padding:1.6rem 1.4rem}
+.cd-empty{text-align:center;margin-top:2rem;line-height:1.9;color:#7a5c45}
+.cd-foot{border-top:2px solid #3b2417;padding:1.2rem 1.4rem}
+.cd-total{display:flex;justify-content:space-between;font-weight:700;margin-bottom:1rem}
+.mc-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:#c75450;color:#fffaf0;border:2px solid #c75450;padding:.8rem 1.6rem;cursor:pointer;transition:.2s;font:inherit;font-weight:600;border-radius:40px;text-decoration:none}
+.mc-btn:hover{background:#3b2417;border-color:#3b2417}
+.cd-foot .mc-btn{width:100%}
+.mc-wrap{max-width:1140px;margin:0 auto;padding:2.4rem 24px 4rem;color:#3b2417}
+.mc-crumb{font-size:.85rem;color:#7a5c45;margin-bottom:1.4rem}.mc-crumb a{color:#7a5c45}.mc-crumb a:hover{color:#c75450}
+.mc-title{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(2.2rem,6vw,3.8rem);margin:0 0 .4rem}
+.mc-sub{max-width:54ch;margin:0 0 2.4rem;font-size:1.1rem;color:#7a5c45}
+.mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-bottom:1rem}
+.mc-card{border:2px solid #3b2417;background:#fffaf0;padding:1.8rem;border-radius:22px}
+.mc-card h2{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:1.5rem;margin:0 0 1.2rem}
+.mc-card label{display:block;font-size:.85rem;margin-bottom:1rem;color:#7a5c45}
+.mc-card input{display:block;width:100%;margin-top:.4rem;padding:.75rem .9rem;border:2px solid #3b2417;background:#f6ead6;font:inherit;font-size:15px;color:#3b2417;border-radius:12px}
+.mc-card input:focus{outline:none;border-color:#c75450}
+.mc-h2{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(1.6rem,4vw,2.4rem);margin:2.4rem 0 1.4rem}
+.mc-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.mc-benefit{border:2px solid #3b2417;padding:1.4rem;background:#fffaf0;border-radius:18px}
+.mc-benefit svg{width:30px;height:30px;margin-bottom:.7rem;color:#cf7035}
+.mc-benefit h3{font-size:1.05rem;margin:0 0 .4rem}.mc-benefit p{margin:0;font-size:.9rem;color:#7a5c45}
+.mc-orders{border:2px solid #3b2417;background:#e0a93b;padding:2rem;text-align:center;margin-top:1.6rem;border-radius:22px}
+.mc-orders h2{font-family:Fraunces,Georgia,serif;font-style:italic;margin:0 0 .6rem}.mc-orders p{margin:0 0 1.4rem;color:#3b2417}
+.addon-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,150%);background:#3b2417;color:#f6ead6;padding:.9rem 1.5rem;z-index:300;transition:transform .4s;border-radius:40px}
+.addon-toast.show{transform:translate(-50%,0)}
+@media(max-width:760px){.mc-grid{grid-template-columns:1fr}.mc-benefits{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.mc-benefits{grid-template-columns:1fr}}
